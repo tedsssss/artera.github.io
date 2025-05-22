@@ -1,0 +1,58 @@
+[debug] [2025-05-22T16:30:39.420Z] ----------------------------------------------------------------------
+[debug] [2025-05-22T16:30:39.423Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-05-22T16:30:39.424Z] CLI Version:   14.4.0
+[debug] [2025-05-22T16:30:39.424Z] Platform:      win32
+[debug] [2025-05-22T16:30:39.424Z] Node Version:  v20.17.0
+[debug] [2025-05-22T16:30:39.424Z] Time:          Thu May 22 2025 23:30:39 GMT+0700 (Western Indonesia Time)
+[debug] [2025-05-22T16:30:39.424Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-05-22T16:30:39.431Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-05-22T16:30:39.431Z] > authorizing via signed-in user (theodorekasyfillah06@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Lenovo\OneDrive - UNIVERSITAS INDONESIA\Documents\KULIAH\AKADEMIS\Project\artera
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project. 
+[debug] [2025-05-22T16:31:00.161Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:00.162Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:00.163Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects [none]
+[debug] [2025-05-22T16:31:00.163Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"projectId":"arterappd","name":"arteraid"}
+[debug] [2025-05-22T16:31:01.540Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects 200
+[debug] [2025-05-22T16:31:01.540Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects {"name":"operations/create_project.global.8381448458237244580"}
+[debug] [2025-05-22T16:31:01.542Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:01.542Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:01.542Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8381448458237244580 [none]
+[debug] [2025-05-22T16:31:02.601Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8381448458237244580 200
+[debug] [2025-05-22T16:31:02.601Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8381448458237244580 {"name":"operations/create_project.global.8381448458237244580"}
+[debug] [2025-05-22T16:31:03.105Z] [Project Creation Poller] Retrying task index 0
+[debug] [2025-05-22T16:31:03.106Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:03.106Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:03.106Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8381448458237244580 [none]
+[debug] [2025-05-22T16:31:03.385Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8381448458237244580 200
+[debug] [2025-05-22T16:31:03.385Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/operations/create_project.global.8381448458237244580 {"name":"operations/create_project.global.8381448458237244580","metadata":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.ProjectCreationStatus","gettable":true,"ready":true},"done":true,"response":{"@type":"type.googleapis.com/google.cloudresourcemanager.v1.Project","projectNumber":"860654599364","projectId":"arterappd","lifecycleState":"ACTIVE","name":"arteraid","createTime":"2025-05-22T16:31:02.843868Z"}}
+[debug] [2025-05-22T16:31:03.387Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:03.388Z] Checked if tokens are valid: true, expires at: 1747934860119
+[debug] [2025-05-22T16:31:03.388Z] >>> [apiv2][query] POST https://firebase.googleapis.com/v1beta1/projects/arterappd:addFirebase [none]
+[debug] [2025-05-22T16:31:05.006Z] <<< [apiv2][status] POST https://firebase.googleapis.com/v1beta1/projects/arterappd:addFirebase 403
+[debug] [2025-05-22T16:31:05.006Z] <<< [apiv2][body] POST https://firebase.googleapis.com/v1beta1/projects/arterappd:addFirebase {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-05-22T16:31:05.007Z] Request to https://firebase.googleapis.com/v1beta1/projects/arterappd:addFirebase had HTTP Error: 403, The caller does not have permission
+[debug] [2025-05-22T16:31:05.167Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/arterappd:addFirebase had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to add Firebase to Google Cloud Platform project. See firebase-debug.log for more info.
